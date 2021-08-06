@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PokeConectDB</string>
+    <string name="start_btn">get them all !</string>
+    <string name="create_account_text">Create Account</string>
+    <string name="name_create">Name:</string>
+    <string name="lastnameCreateEditText">Lastname:</string>
+    <string name="save_btn">Save</string>
+    <string name="email_txt">Email:</string>
+    <string name="passw_txt">Password:</string>
+    <string name="log_in_txt">Log In</string>
+    <string name="signup_txt">Sign Up for Pokemon</string>
+</resources>
