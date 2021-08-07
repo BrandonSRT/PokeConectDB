@@ -22,6 +22,14 @@
         <action
             android:id="@+id/action_loginFragment_to_create_account_nav_graph"
             app:destination="@id/create_account_nav_graph" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
     </fragment>
     <include app:graph="@navigation/create_account_nav_graph" />
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="com.example.pokeconectdb.views.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main"/>
 </navigation>

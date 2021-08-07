@@ -90,10 +90,10 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
 
 
-     //   login_btn.setOnClickListener{
-     //       val action = LoginFragmentDirections.actionLoginFragmentToPokeListFragment()
-     //       findNavController().navigate(action)
-     //   }
+        login_btn.setOnClickListener{
+            val action = LoginFragmentDirections.actionLoginFragmentToMainFragment2()
+            findNavController().navigate(action)
+        }
 
         signup_btn.setOnClickListener{
             val action = LoginFragmentDirections.actionLoginFragmentToCreateAccountNavGraph()

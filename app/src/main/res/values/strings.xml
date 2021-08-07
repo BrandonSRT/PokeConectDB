@@ -9,4 +9,6 @@
     <string name="passw_txt">Password:</string>
     <string name="log_in_txt">Log In</string>
     <string name="signup_txt">Sign Up for Pokemon</string>
+    <string name="all_pokemon_title">Lista</string>
+    <string name="favorite_pokemon_title">Favoritos</string>
 </resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inner_nav_graph"
+    app:startDestination="@id/pokemonListFragment">
+
+    <fragment
+        android:id="@+id/pokemonListFragment"
+        android:name="com.example.pokeconectdb.views.PokemonListFragment"
+        tools:layout="@layout/fragment_pokemon_list"
+        android:label="fragment_pokemon_list">
+        <action
+            android:id="@+id/action_pokemonListFragment_to_currentPokemonFragment"
+            app:destination="@id/currentPokemonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentPokemonFragment"
+        android:name="com.example.pokeconectdb.views.CurrentPokemonFragment"
+        tools:layout="@layout/fragment_current_pokemon"
+        android:label="CurrentPokemonFragment">
+        <argument
+            android:name="pokemon"
+            app:argType="com.example.pokeconectdb.views.models.PokemonModelList" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritePokemonListFragment"
+        android:name="com.example.pokeconectdb.views.FavoritePokemonListFragment"
+        android:label="FavoritePokemonListFragment" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.pokeconectdb.views.MainFragment"
+        android:label="MainFragment" />
+</navigation>
